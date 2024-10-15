@@ -1,0 +1,84 @@
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #0e0e10;
+    color: white;
+}
+
+.book-now-button, .view-park-button {
+    background-color: #024CAA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 10px 0; 
+    cursor: pointer;
+    text-decoration: none; 
+}
+
+.book-now-button:hover, .view-park-button:hover {
+    background-color: #0358b0; 
+}
+
+.admin-link {
+    position: absolute;
+    bottom: 20px; 
+    font-size: 16px; 
+    color: white; 
+    text-decoration: none; 
+}
+
+/* Default desktop styles */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  button {
+    width: 200px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #024CAA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Mobile styles */
+  @media screen and (max-width: 600px) {
+    .container {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    button {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+    }
+  
+    h1, h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .book-now-button {
+      margin: 10px auto;
+    }
+  
+    .view-park-button {
+      margin: 10px auto;
+    }
+  
+    .admin-button {
+      margin-top: 30px;
+    }
+  }
+  

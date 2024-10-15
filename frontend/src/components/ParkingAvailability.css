@@ -1,0 +1,98 @@
+/* src/components/ParkingAvailability.css */
+.parking-availability {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0e0e10;
+  }
+  
+  .availability-panel {
+    background-color: #1a1a1d;
+    border-radius: 20px;
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .toggle-buttons button {
+    background-color: #024caa;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .toggle-buttons button.active {
+    background-color: #036bb5;
+  }
+  
+  .parking-lots-list {
+    margin-top: 20px;
+  }
+  
+  .parking-lot {
+    background-color: #2a2a2d;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  /* Default desktop styles */
+.park-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.park-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  background-color: #024CAA;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+  .park-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .park-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .park-item > div {
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,237 @@
+/* Full page container with centered form */
+.booking-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(14, 14, 16, 0.8);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Form container styling with more rounded corners */
+  .booking-form-container {
+    background-color: #1e1e22;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+  }
+  
+  /* Header styling */
+  .booking-form-container h2 {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form group styling */
+  .form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .form-group label {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Input and select field styles */
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.75rem;
+    border: 1px solid #024CAA;
+    border-radius: 12px;
+    background-color: #2e2e33;
+    color: #ffffff;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Specifically fixing the vehicle type dropdown */
+  .form-group select {
+    appearance: none;
+    background: #2e2e33;
+    color: #ffffff;
+    padding-right: 1.5rem;
+    position: relative;
+  }
+  
+  /* Add a custom dropdown icon */
+  .form-group select::after {
+    content: '▼';
+    position: absolute;
+    right: 10px;
+    pointer-events: none;
+    color: #ffffff;
+  }
+  
+  /* Button styling */
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .submit-btn,
+  .clear-btn {
+    width: 48%;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #024CAA;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover,
+  .clear-btn:hover {
+    background-color: #036fd1;
+  }
+  
+  /* Error and Success messages */
+  .error {
+    color: red;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .success {
+    color: green;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .booking-form-container {
+      width: 90%;
+    }
+  
+    .form-group input,
+    .form-group select {
+      max-width: 100%;
+    }
+  }
+  
+  /* Default desktop styles */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #024CAA;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+  .form-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  input, select, textarea {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+/* Default desktop styles */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #024CAA;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+  .form-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  input, select, textarea {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 15px;
+    font-size: 16px;
+  }
+}
+.admin-dashboard {
+  padding: 20px;
+}
+
+.admin-dashboard h1 {
+  text-align: center;
+  color: #024CAA;
+}
+
+.admin-dashboard table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+.admin-dashboard table th,
+.admin-dashboard table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-dashboard table th {
+  background-color: #024CAA;
+  color: white;
+}
+
+.admin-dashboard .chart-container {
+  margin: 50px auto;
+  width: 80%;
+}
